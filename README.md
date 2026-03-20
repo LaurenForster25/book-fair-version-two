@@ -47,7 +47,7 @@ CREDS = Credentials.from_service_account_info(creds_dict)
 
 ### Testing the working app
 
-- To test that my app was working correctly I entered some mock data into the terminal and the correct message was displayed:
+- To test that my app was working correctly I entered some mock data into the terminal and the correct message was displayed.
 ![alt text](image-2.png)
 
 - I then tested that if I entered insufficient data, the correct error message would be presented to the user.
@@ -56,7 +56,7 @@ CREDS = Credentials.from_service_account_info(creds_dict)
 - I also tested that if an incorrect form of data was entered, for example a word instead of a number, that the appropriate message would be displayed for that.
 ![alt text](image-4.png)
 
--Finally I entered another set of valid mock data and checked that the book-fair spreadsheet was being updated, which it was. The table had an extra two lines of data from the information that I had entered during testing:
+-Finally I entered another set of valid mock data and checked that the book-fair spreadsheet was being updated, which it was. The table had an extra two lines of data from the information that I had entered during testing.
 ![alt text](image-5.png)
 
 
