@@ -29,17 +29,33 @@
 
 - Another major bug that I encountered was that my Google Sheet was not being updated with the new figures. To help me with this issue, I looked back at the Love Sandwiches project with Code Institute and found that while I had created the command, I had not made a call to it later in the code. That was fixed by adding 'update_sales_worksheet(sales_data)'.
 
+- After I had deployed my project in Heroku I was still faced with an error message in the app: 
+![alt text](image.png)
+- I discovered that I had forgotten to copy over my ss.json file into the new project. I then created this file but also forgot to add it into the gitignore file. Because of this my changes were not being pushed to GitHub because of the sensitive information within the credentials. To resolve this issue I deleted the 'ss.json' commit history so that I could work with a new ss.json file. 
+
+- Despite that fix, the next issue I had to face was that the credentials on my Heroku config vars did not link up to my vscode credentials and they were not being found when the app was run. To help resolve this issue I used ChatGPT. ChatGPT recommended a change is my python code so that the credentials could by found in the vscode. I used the following code provided by ChatGPT to fix this bug: 
+import os
+import json
+creds_dict = json.loads(os.environ["SS"])
+CREDS = Credentials.from_service_account_info(creds_dict)
+
+- The final problem I encountered when trying to get my app to work was that my bug fixes had been uploaded to GitHub but not to Heroku. I contacted a tutor from Code Institute to help me understand the problem. I was informed that all I had to do was re-deploy the project on Heroku with the fixed code from the Github repository. I have provided an image below of the app displaying the correct output:
+![alt text](image-1.png)
+
 - I copied my code straight into the PEP8 Python Validator. At first I had quite a few error messages, however they were simple fixes. Mostly regarding whitespace or not enough blank lines between commands. Once I corrected those, there were no errors left in my code as you can see from the image below. 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ba86ff1f-8d3f-40db-ba20-747abf72d82a" />
 
 ## Deployment 
 
-- I have had many issues when it comes to the deployment of my project on Heroku.My original repository was not being recognised and I followed the steps recommended by the site, however after meeting with a mentor I was informed that my original file was too corrupted with errors to be deployed. I had also forgotten to include a 'Procfile'. After attempting to fix my original project we still could not get it uploaded on Heroku as it could not recognise my venv. My mentor provided me with the Code Institute template so that I could copy my project into the template and hopefully have a suitable repository to connect and deploy.
+- I have had many issues when it comes to the deployment of my project on Heroku. My original repository was not being recognised and I followed the steps recommended by the site, however after meeting with a mentor I was informed that my original file was too corrupted with errors to be deployed. I had also forgotten to include a 'Procfile'. After attempting to fix my original project we still could not get it uploaded on Heroku as it could not recognise my venv. My mentor provided me with the Code Institute template so that I could copy my project into the template and hopefully have a suitable repository to connect and deploy.
 
--For this newly created repository, my contributions to the commits are very few because most of my own work I have copied straight in from the original project. So I have provided the link to the original github repository for evidence of my creation of the actual code: https://github.com/LaurenForster25/book-fair.git
+- For this newly created repository, my contributions to the commits are very few because most of my own work I have copied straight in from the original project. So I have provided the link to the original github repository for evidence of my creation of the actual code: https://github.com/LaurenForster25/book-fair.git
+
+- I have now deployed my working app on Heroku by linking my updated github repository 'book-fair-version-two'. Here is the link: https://git.heroku.com/book-fair-data-automation.git
 
 ## Credits
 
 - Code Institute for providing a data model that I could use to guide me through this project and the template that has helped me deploy my project.
 - Julia Konovalova, the mentor who helped me understand the issues with my original project and guided me through the solution so that I could deploy my work.
-- ChatGPT for providing answers to help me fix some minor bugs, where incorrect indentation was used and words were mispelt.
+- Tom from the tutor assistance chat who helped me to successfully re-deploy the new working app.
+- ChatGPT for providing answers to help me fix some minor bugs, where incorrect indentation was used and words were mispelt. Also for helping me understand why my Heroku credentials were not linked up with those in the vscode.
