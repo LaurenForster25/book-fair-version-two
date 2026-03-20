@@ -34,6 +34,7 @@
 
 - After I had deployed my project in Heroku I was still faced with an error message in the app: 
 ![alt text](image.png)
+
 - I discovered that I had forgotten to copy over my ss.json file into the new project. I then created this file but also forgot to add it into the gitignore file. Because of this my changes were not being pushed to GitHub because of the sensitive information within the credentials. To resolve this issue I deleted the 'ss.json' commit history so that I could work with a new ss.json file. 
 
 - Despite that fix, the next issue I had to face was that the credentials on my Heroku config vars did not link up to my vscode credentials and they were not being found when the app was run. To help resolve this issue I used ChatGPT. ChatGPT recommended a change is my python code so that the credentials could by found in the vscode. I used the following code provided by ChatGPT to fix this bug: 
@@ -56,7 +57,7 @@ CREDS = Credentials.from_service_account_info(creds_dict)
 - I also tested that if an incorrect form of data was entered, for example a word instead of a number, that the appropriate message would be displayed for that.
 ![alt text](image-4.png)
 
--Finally I entered another set of valid mock data and checked that the book-fair spreadsheet was being updated, which it was. The table had an extra two lines of data from the information that I had entered during testing.
+- Finally I entered another set of valid mock data and checked that the book-fair spreadsheet was being updated, which it was. The table had an extra two lines of data from the information that I had entered during testing.
 ![alt text](image-5.png)
 
 
