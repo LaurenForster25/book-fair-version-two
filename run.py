@@ -1,4 +1,6 @@
 import gspread
+import os
+import json
 from google.oauth2.service_account import Credentials
 
 SCOPE = [
@@ -7,7 +9,8 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive"
 ]
 
-CREDS = Credentials.from_service_account_file('ss.json')
+creds_dict = json.loads(os.environ["SS"])
+CREDS = Credentials.from_service_account_info(creds_dict)
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('book-fair')
