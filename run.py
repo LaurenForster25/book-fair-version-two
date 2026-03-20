@@ -137,9 +137,3 @@ def main():
 
 print("This is Heavenly Books Data Automation!\n")
 main()
-
-
-
-
-
-
