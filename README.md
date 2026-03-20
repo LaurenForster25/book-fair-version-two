@@ -31,37 +31,15 @@
 
 - I copied my code straight into the PEP8 Python Validator. At first I had quite a few error messages, however they were simple fixes. Mostly regarding whitespace or not enough blank lines between commands. Once I corrected those, there were no errors left in my code as you can see from the image below. 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ba86ff1f-8d3f-40db-ba20-747abf72d82a" />
-<<<<<<< HEAD
-
 
 ## Deployment 
-- I have had many issues when it comes to the deployment of my project. I followed all the steps provided by Code Institute to set up Heroku and upon trying to build my project from the main branch, an error message was thrown. I have attached an image of this error message below. I followed all of the steps provided in the terminal to move my .venv/ into my gitignore file, however, my saved changes are no longer committing to my github repository, I don't believe this is a mistake in the code, but because the changes are taking so long to save that vscode continues to load the commits without anything actually happening. I understand that deploying to Heroku was a main criteria for passing this project, but since I cannot achieve that right now I have decided to include the link to my github repository page, so there is proof of my project. Above you will also see that I have tested my code and it is all correct.
-- Despite this obstacle, I will be contacting a tutor to try and fix whatever issue has arisen here because I am completely at a loss as to what to do. Here is the link for my github repository: https://github.com/LaurenForster25/book-fair.git
 
-<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/1c9c388c-d514-4b22-895e-12d9fc4e87eb" />
+- I have had many issues when it comes to the deployment of my project on Heroku.My original repository was not being recognised and I followed the steps recommended by the site, however after meeting with a mentor I was informed that my original file was too corrupted with errors to be deployed. I had also forgotten to include a 'Procfile'. After attempting to fix my original project we still could not get it uploaded on Heroku as it could not recognise my venv. My mentor provided me with the Code Institute template so that I could copy my project into the template and hopefully have a suitable repository to connect and deploy.
 
-<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/4b3e879f-4f86-409d-8f82-d7e087a87b0c" />
+-For this newly created repository, my contributions to the commits are very few because most of my own work I have copied straight in from the original project. So I have provided the link to the original github repository for evidence of my creation of the actual code: https://github.com/LaurenForster25/book-fair.git
 
 ## Credits
 
-- Code Institute for providing a data model that I could use to guide me through this project.
-- The student care team for helping me with my deployment to Heroku.
+- Code Institute for providing a data model that I could use to guide me through this project and the template that has helped me deploy my project.
+- Julia Konovalova, the mentor who helped me understand the issues with my original project and guided me through the solution so that I could deploy my work.
 - ChatGPT for providing answers to help me fix some minor bugs, where incorrect indentation was used and words were mispelt.
-=======
-
-
-## Deployment 
-- I have had many issues when it comes to the deployment of my project. I followed all the steps provided by Code Institute to set up Heroku and upon trying to build my project from the main branch, an error message was thrown. I have attached an image of this error message below. I followed all of the steps provided in the terminal to move my .venv/ into my gitignore file, however, my saved changes are no longer committing to my github repository, I don't believe this is a mistake in the code, but because the changes are taking so long to save that vscode continues to load the commits without anything actually happening. I understand that deploying to Heroku was a main criteria for passing this project, but since I cannot achieve that right now I have decided to include the link to my github repository page, so there is proof of my project. Above you will also see that I have tested my code and it is all correct.
-- Despite this obstacle, I will be contacting a tutor to try and fix whatever issue has arisen here because I am completely at a loss as to what to do. Here is the link for my github repository: https://github.com/LaurenForster25/book-fair.git
-
-<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/1c9c388c-d514-4b22-895e-12d9fc4e87eb" />
-
-<img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/4b3e879f-4f86-409d-8f82-d7e087a87b0c" />
-
-## Credits
-
-- Code Institute for providing a data model that I could use to guide me through this project.
-- The student care team for helping me with my deployment to Heroku.
-- ChatGPT for providing answers to help me fix some minor bugs, where incorrect indentation was used and words were mispelt.
-
->>>>>>> 30134aedd91f20dcdba724ec0c4e4d9f020e880f
